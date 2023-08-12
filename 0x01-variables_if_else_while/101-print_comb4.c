@@ -11,11 +11,11 @@ int main(void)
 	int j = '0';
 	int k = '0';
 
-	while (i < '7')
+	while (i <= '7')
 	{
-		while (j < '8')
+		while (j <= '8')
 		{
-			while (k < '9')
+			while (k <= '9')
 			{
 				if (i < j && j < k)
 				{
