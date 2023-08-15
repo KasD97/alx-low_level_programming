@@ -4,7 +4,6 @@
  * @c: Number to be calculated
  * Return: Absolute value of number or 0
  */
-
 int _abs(int c)
 {
 	if (c < 0)
