@@ -19,7 +19,7 @@ int main(void)
 
 	for (i = 1; i < 91; i++)
 	{
-		printf(",%lu", after);
+		printf(", %lu", after);
 		after += before;
 		before = after - before;
 	}
@@ -31,7 +31,7 @@ int main(void)
 
 	for (i = 92; i < 99; i++)
 	{
-		printf(",%lu", after1 + (after2 / l));
+		printf(", %lu", after1 + (after2 / l));
 		printf("%lu", after2 % l);
 		after1 = after1 + before1;
 		before1 = after1 - before1;
