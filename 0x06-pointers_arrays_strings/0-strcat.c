@@ -3,9 +3,8 @@
  * _strcat - concatenate two strings
  * @dest: input
  * @src: input
- * Return: pointer 
+ * Return: pointer
  */
-
 char *_strcat(char *dest, char *src)
 {
 	int i;
@@ -23,6 +22,7 @@ char *_strcat(char *dest, char *src)
 		i++;
 		j++;
 	}
+
 	dest[i] = '\0';
 	return (dest);
 }
