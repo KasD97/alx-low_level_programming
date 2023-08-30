@@ -1,6 +1,6 @@
 #include "main.h"
 
-int check_palindrome(char *l, char *r);
+int check_palindrome(char *s, int i, int len);
 int _strlen_recursion(char *s);
 
 /**
@@ -13,7 +13,7 @@ int is_palindrome(char *s)
 {
 	if (*s == 0)
 		return (1);
-	return (check_palindrome(s,(s + strlen - 1)));
+	return (check_palindrome(s, 0, _strlen-recursion(s)));
 }
 
 /**
@@ -32,16 +32,17 @@ int _strlen_recursion(char *s)
 /**
  * check_palindrome - checks whether left and right sides
  * of the string match
- * @l: left index
- * @r: right index
+ * @s: string to check
+ * @i: iterator
+ * @len: length of string
  * Return: 1 if palindrome, 0 if not
  */
 
-int check_palindrome(char *l, char *r)
+int check_palindrome(char *s, int i, int len)
 {
-	if (l > r)
+	if (*(s + i) != *(s + len - 1))
+		return (0);
+	if (i >= len)
 		return (1);
-	if (*l == *r)
-		return (check_palindrome(l + 1, r - 1));
-	return (0);
+	return (check_palindrome(s, i + 1, len - 1));
 }
