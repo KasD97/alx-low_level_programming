@@ -30,8 +30,7 @@ int _strlen_recursion(char *s)
 }
 
 /**
- * check_palindrome - checks whether left and right sides
- * of the string match
+ * check_palindrome - checks for palindrome
  * @s: string to check
  * @i: iterator
  * @len: length of string
