@@ -9,7 +9,7 @@ int is_palindrome(char *s)
 {
 	if (*s == 0)
 		return (1);
-	return ();
+	return (check_palindrome(s,(s + strlen - 1)));
 }
 
 /**
