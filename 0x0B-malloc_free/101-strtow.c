@@ -4,7 +4,7 @@
  * count_word - function to count no. of words
  * in a string
  * @s: string
- * Return: word ount
+ * Return: word count
  */
 int count_word(char *s)
 {
